@@ -7,6 +7,12 @@
 	$: {
 		console.log('something is being updated!');
 	}
+
+    const runDelete = (id) => {
+        console.log("Deleting this index: ", id);
+        console.log("What is getting deleted:", tasks.toSpliced(id, 1));
+        tasks = tasks.toSpliced(id, 1)
+    }
 </script>
 
 <MaterialApp>
@@ -38,7 +44,7 @@
 				</thead>
 				<tbody>
 					{#each tasks as task, i}
-						<TaskItem {task} {i}/>
+						<TaskItem {task} {i} on:deleteTask={(event) => runDelete(event.detail.id)}/>
 					{/each}
 				</tbody>
 			</table>
