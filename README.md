@@ -1,38 +1,45 @@
-# create-svelte
+# Task Manager
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+![Task Manager Logo](static/svelte-assignment-banner.png)
 
-## Creating a project
+## Introduction
 
-If you're seeing this, you've probably already done this step. Congrats!
+Task Manager is an educational project designed to aid in learning Svelte, a modern web framework. This project serves as a practical exploration of Svelte concepts, focusing on basic task management functionalities.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Task Creation**: Easily add tasks to your list.
+- **Task Deletion**: Remove tasks when they're completed or no longer needed.
 
-## Developing
+## Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Before getting started, ensure you have Node.js installed on your machine.
 
-```bash
-npm run dev
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install dependencies.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Usage
 
-## Building
+1. To start the development server, run `npm run dev`.
+2. Access the application in your browser at `http://localhost:5173`.
+3. Add tasks using the provided input field.
+4. Delete tasks by clicking on the delete button associated with each task.
 
-To create a production version of your app:
+## Scripts
 
-```bash
-npm run build
-```
+- **dev**: Start the development server.
+- **build**: Build the project for production.
+- **preview**: Preview the production build locally.
+- **lint**: Run Prettier and ESLint for code linting.
+- **format**: Format the codebase using Prettier.
 
-You can preview the production build with `npm run preview`.
+## Technologies Used
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [Svelte](https://svelte.dev/): A reactive web framework for building user interfaces.
+- [Svelte Materialify](https://github.com/hperrin/svelte-materialify): Material Design components for Svelte.
+- [Vite](https://vitejs.dev/): A fast frontend build tool.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests to suggest improvements or report bugs.
